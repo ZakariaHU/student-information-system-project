@@ -11,8 +11,8 @@
 - Environment variables for DB connection
 
 ## Image Naming Convention
-- [school-username]/sis-project-postgres
-- [school-username]/sis-project-app
+- [respectbeko162]/student-information-system-project-postgres
+- [respectbeko162]/student-information-system-project-app
 
 ## Port Strategy
 - PostgreSQL: internal access only
@@ -25,4 +25,3 @@
 ## Resource Limits (Planned)
 - CPU limits per container
 - Memory limits per container
-
