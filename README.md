@@ -18,5 +18,3 @@ The system allows users to perform basic CRUD operations on student data through
 - Zakaria Hussein - Project Manager
 - Salih Berke - Docker and DevOps Engineer
 - Ramez Akkila - C++ Developer
-
-feat: initialize README with project overview
