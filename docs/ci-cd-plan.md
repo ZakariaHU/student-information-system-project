@@ -20,3 +20,6 @@
 ## Docker Hub Strategy (Week 2)
 - Build images on CI
 - Push images to Docker Hub
+
+## Notes
+- Initial CI/CD plan prepared in Week 1 by Student 2.
