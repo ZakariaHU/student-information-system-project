@@ -18,3 +18,8 @@ The system allows users to perform basic CRUD operations on student data through
 - Zakaria Hussein - Project Manager
 - Salih Berke - Docker and DevOps Engineer
 - Ramez Akkila - C++ Developer
+
+## Week 2 Goals
+- Docker containerization
+- postgreSQL + C++ app
+- Docker Compose setup
