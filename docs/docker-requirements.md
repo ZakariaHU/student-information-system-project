@@ -25,3 +25,14 @@
 ## Resource Limits (Planned)
 - CPU limits per container
 - Memory limits per container
+
+## Docker Hub (Week 2)
+
+The C++ application container image was successfully built and pushed to Docker Hub.
+
+- Image: respectbeko162/sis-project-app
+- Tag: latest
+- Registry: Docker Hub
+- Status: Public
+
+This image will be reused in the CI/CD pipeline during automated builds in later weeks.
