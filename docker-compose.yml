@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: sis_postgres
+    environment:
+      POSTGRES_DB: sisdb
+      POSTGRES_USER: sisuser
+      POSTGRES_PASSWORD: sispassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - sis_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sisuser"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: ./app
+    container_name: sis_app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: sisdb
+      DB_USER: sisuser
+      DB_PASSWORD: sispassword
+    networks:
+      - sis_network
+
+volumes:
+  postgres_data:
+
+networks:
+  sis_network:
+    driver: bridge
