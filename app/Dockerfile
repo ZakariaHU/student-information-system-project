@@ -11,3 +11,4 @@ COPY src/main.cpp .
 RUN g++ main.cpp -o app -lpq
 
 CMD ["./app"]
+
