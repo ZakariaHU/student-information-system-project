@@ -28,3 +28,11 @@ The system allows users to perform basic CRUD operations on student data through
 - Licensing decided (MIT / Apache 2.0)
 - Contribution and workflow strategy discussed
 - Communication and task tracking established via GitHub Issues and Projects
+
+## Week 2 Progress
+- Docker Compose setup completed
+- PostgreSQL container configured
+- C++ application container built successfully
+- Containers communicate via internal Docker network
+- CI/CD pipeline planning initiated (GitHub Actions)
+- Database schema and connection logic planned for Week 3
