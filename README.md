@@ -19,7 +19,12 @@ The system allows users to perform basic CRUD operations on student data through
 - Salih Berke - Docker and DevOps Engineer
 - Ramez Akkila - C++ Developer
 
-## Week 2 Goals
-- Docker containerization
-- postgreSQL + C++ app
-- Docker Compose setup
+## Week 1 – Project Setup & Planning
+- GitHub repository created and initialized
+- Team members added and roles assigned
+- Project structure planned
+- Initial issues created and organized on GitHub Projects
+- Milestones defined for weekly tasks
+- Licensing decided (MIT / Apache 2.0)
+- Contribution and workflow strategy discussed
+- Communication and task tracking established via GitHub Issues and Projects
