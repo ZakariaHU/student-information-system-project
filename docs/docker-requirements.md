@@ -11,8 +11,8 @@
 - Environment variables for DB connection
 
 ## Image Naming Convention
-- [respectbeko162]/student-information-system-project-postgres
-- [respectbeko162]/student-information-system-project-app
+- [respectbeko162]/sis-project-postgres
+- [respectbeko162]/sis-project-app
 
 ## Port Strategy
 - PostgreSQL: internal access only
