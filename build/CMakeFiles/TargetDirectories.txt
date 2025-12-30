@@ -1,3 +1,0 @@
-/home/ramez/sis-project/build/CMakeFiles/sis_app.dir
-/home/ramez/sis-project/build/CMakeFiles/edit_cache.dir
-/home/ramez/sis-project/build/CMakeFiles/rebuild_cache.dir
