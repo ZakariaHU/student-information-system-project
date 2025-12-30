@@ -1,0 +1,40 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: sis_app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: sisuser
+      DB_PASSWORD: sispass
+      DB_NAME: sisdb
+    networks:
+      - sis_network
+
+  postgres:
+    image: postgres:15
+    container_name: sis_postgres
+    environment:
+      POSTGRES_USER: sisuser
+      POSTGRES_PASSWORD: sispass
+      POSTGRES_DB: sisdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sisuser"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sis_network
+
+volumes:
+  postgres_data:
+
+networks:
+  sis_network:
