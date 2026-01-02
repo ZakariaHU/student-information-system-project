@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: sis_postgres
+    environment:
+      POSTGRES_DB: sisdb
+      POSTGRES_USER: sisuser
+      POSTGRES_PASSWORD: sispass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sisuser -d sisdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sis_network
+
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: sis_app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - sis_network
+
+volumes:
+  postgres_data:
+
+networks:
+  sis_network:
+
