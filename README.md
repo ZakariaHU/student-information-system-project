@@ -51,4 +51,15 @@ The system allows users to perform basic CRUD operations on student data through
 - Successful database connection verified from C++ application
 - Test SQL query executed from C++ (SELECT * FROM students)
 - End-to-end integration validated using Docker Compose
+<<<<<<< HEAD
 - Application and database services confirmed working together
+=======
+- Application and database services confirmed working together
+
+## Week 4 Progress
+- Implemented full CRUD operations in C++
+- Insert, select, update, and delete queries tested
+- Application lifecycle improved with interactive loop
+- Docker Compose updated for restart handling
+- Database interactions verified through logs
+>>>>>>> 7aa8639 (Week 4: add CRUD operations and improve container lifecycle)

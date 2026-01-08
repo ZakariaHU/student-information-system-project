@@ -2,6 +2,7 @@ services:
   postgres:
     image: postgres:15
     container_name: sis_postgres
+    restart: unless-stopped
     environment:
       POSTGRES_DB: sisdb
       POSTGRES_USER: sisuser
@@ -24,9 +25,19 @@ services:
       context: .
       dockerfile: app/Dockerfile
     container_name: sis_app
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
     depends_on:
       postgres:
         condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: sisuser
+      DB_PASSWORD: sispass
+      DB_NAME: sisdb
+    command: ["./app"]
     networks:
       - sis_network
 
@@ -35,4 +46,4 @@ volumes:
 
 networks:
   sis_network:
-
+    driver: bridge
