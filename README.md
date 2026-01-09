@@ -40,21 +40,11 @@ The system allows users to perform basic CRUD operations on student data through
 - CI/CD pipeline planning initiated (GitHub Actions)
 - Database schema and connection logic planned for Week 3
 
-##Week 3 Progress
-
-- PostgreSQL database schema designed and implemented
-- Core tables created (students, courses, enrollments)
-- SQL initialization script (database/init.sql) added
-- Database automatically initialized on container startup
-- C++ application connected to PostgreSQL using libpq
-- Environment variables used for secure DB configuration
-- Successful database connection verified from C++ application
-- Test SQL query executed from C++ (SELECT * FROM students)
-- End-to-end integration validated using Docker Compose
-<<<<<<< HEAD
-- Application and database services confirmed working together
-=======
-- Application and database services confirmed working together
+## Week 3 – Database & Application Logic
+- Database schema implemented
+- PostgreSQL connection finalized
+- Basic CRUD operations added
+- CI pipeline updated to support database-related builds
 
 ## Week 4 Progress
 - Implemented full CRUD operations in C++
