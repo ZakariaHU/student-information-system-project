@@ -21,7 +21,7 @@ The system allows users to perform basic CRUD operations on student data through
 
  feature/week2-docker-compose-ci
 =======
-## Week 1 – Project Setup & Planning
+## Week 1 - Project Setup & Planning
 - GitHub repository created and initialized
 - Team members added and roles assigned
 - Project structure planned
@@ -32,7 +32,7 @@ The system allows users to perform basic CRUD operations on student data through
 - Communication and task tracking established via GitHub Issues and Projects
 
  develop
-## Week 2 Progress
+## Week 2 - Progress
 - Docker Compose setup completed
 - PostgreSQL container configured
 - C++ application container built successfully
@@ -40,16 +40,16 @@ The system allows users to perform basic CRUD operations on student data through
 - CI/CD pipeline planning initiated (GitHub Actions)
 - Database schema and connection logic planned for Week 3
 
-## Week 3 – Database & Application Logic
+## Week 3 - Database & Application Logic
 - Database schema implemented
 - PostgreSQL connection finalized
 - Basic CRUD operations added
 - CI pipeline updated to support database-related builds
 
-## Week 4 Progress
-- Implemented full CRUD operations in C++
-- Insert, select, update, and delete queries tested
-- Application lifecycle improved with interactive loop
-- Docker Compose updated for restart handling
-- Database interactions verified through logs
->>>>>>> 7aa8639 (Week 4: add CRUD operations and improve container lifecycle)
+## Week 4 - Feature Expansion and Stabilization
+- Extended database operations to support full CRUD functionality
+- Improved command-line interface for better user interaction
+- Added input validation and basic error handling
+- Reviewed and cleaned up database query logic
+- Verified application stability using Docker Compose
+- Confirmed CI pipeline continues to build successfully after updates
