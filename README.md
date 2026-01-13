@@ -19,7 +19,9 @@ The system allows users to perform basic CRUD operations on student data through
 - Salih Berke - Docker and DevOps Engineer
 - Ramez Akkila - C++ Developer
 
-## Week 1 – Project Setup & Planning
+ feature/week2-docker-compose-ci
+=======
+## Week 1 - Project Setup & Planning
 - GitHub repository created and initialized
 - Team members added and roles assigned
 - Project structure planned
@@ -29,10 +31,25 @@ The system allows users to perform basic CRUD operations on student data through
 - Contribution and workflow strategy discussed
 - Communication and task tracking established via GitHub Issues and Projects
 
-## Week 2 Progress
+ develop
+## Week 2 - Progress
 - Docker Compose setup completed
 - PostgreSQL container configured
 - C++ application container built successfully
 - Containers communicate via internal Docker network
 - CI/CD pipeline planning initiated (GitHub Actions)
 - Database schema and connection logic planned for Week 3
+
+## Week 3 - Database & Application Logic
+- Database schema implemented
+- PostgreSQL connection finalized
+- Basic CRUD operations added
+- CI pipeline updated to support database-related builds
+
+## Week 4 - Feature Expansion and Stabilization
+- Extended database operations to support full CRUD functionality
+- Improved command-line interface for better user interaction
+- Added input validation and basic error handling
+- Reviewed and cleaned up database query logic
+- Verified application stability using Docker Compose
+- Confirmed CI pipeline continues to build successfully after updates
