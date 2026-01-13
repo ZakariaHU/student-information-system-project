@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sis_app.dir/main.cpp.o CMakeFiles/sis_app.dir/src/student_repository.cpp.o -o sis_app 

@@ -1,0 +1,3 @@
+/home/ramez/sis-week3-student3/build/CMakeFiles/sis_app.dir
+/home/ramez/sis-week3-student3/build/CMakeFiles/edit_cache.dir
+/home/ramez/sis-week3-student3/build/CMakeFiles/rebuild_cache.dir
