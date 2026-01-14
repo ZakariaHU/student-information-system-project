@@ -30,6 +30,8 @@ void listStudents(PGconn* conn) {
 }
 
 int main() {
+    std::cout << "Student 3 code running" << std::endl;
+
     const char* host = std::getenv("DB_HOST");
     const char* port = std::getenv("DB_PORT");
     const char* user = std::getenv("DB_USER");
